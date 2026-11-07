@@ -6,29 +6,29 @@ import { CEOCard } from "./CEOCard";
 
 const faqs = [
   {
-    question: "What types of projects do you work on?",
+    question: "How do I enquire about a product?",
     answer:
-      "We work on residential and commercial projects, including new builds, renovations, and upgrades. Each project is approached based on its specific goals and requirements.",
+      "Select the relevant product category and share your application, required capacity, operating range, and quantity through the enquiry form. Our team will review and follow up.",
   },
   {
-    question: "Do you handle both design and construction?",
+    question: "Can I request a specific capacity or configuration?",
     answer:
-      "Yes. We provide architecture, construction, and renovation services under one team, ensuring a coordinated process from early design through final delivery.",
+      "Yes. Share your required dimensions, capacity, and operating conditions. The Sayaro team can confirm which options are available for the selected product.",
   },
   {
-    question: "How involved will I be during the project?",
+    question: "Can I request product specifications or datasheets?",
     answer:
-      "We work closely with clients throughout the project. You'll be involved at key milestones, with regular updates and clear opportunities for feedback and decisions.",
+      "Yes. Mention the product or model in your enquiry and request the relevant technical details or datasheet. We will share available specification documents.",
   },
   {
-    question: "Do you help with permits and approvals?",
+    question: "Do you support installation?",
     answer:
-      "Yes. We assist with required permits and regulatory approvals as part of our project management service, keeping the process on track.",
+      "Contact the team for details on installation, commissioning, and after-sales support scope for your specific equipment and location.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "What is the typical lead time for equipment?",
     answer:
-      "Timelines vary based on scope and complexity. We provide a detailed schedule during the planning phase and keep you informed of progress throughout.",
+      "Lead times vary by product and configuration. Standard models typically ship within 2–4 weeks. Custom configurations may require 4–8 weeks. We confirm timelines at the time of order.",
   },
 ];
 
@@ -73,8 +73,8 @@ export function FAQ() {
               Questions
             </h3>
             <p className="mt-4 text-sm text-neutral-500">
-              Questions? We have answers. Here&apos;s what you need to know about
-              working with us.
+              Common questions about our equipment, ordering process, and
+              support.
             </p>
             <p className="mt-8 text-sm text-neutral-500">
               Need to ask something else?

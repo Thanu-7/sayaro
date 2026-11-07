@@ -20,9 +20,9 @@ const staggerItem = {
 
 const features = [
   {
-    title: "Creating Functional Spaces",
+    title: "Precision-Engineered Equipment",
     description:
-      "We create spaces that enhance living, increase comfort, and provide lasting value.",
+      "Every instrument is built for accuracy, durability, and consistent performance across demanding laboratory applications.",
     icon: (
       <svg width="100" height="100" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <circle cx="50" cy="60" r="38" />
@@ -38,9 +38,9 @@ const features = [
     ),
   },
   {
-    title: "Delivering Consistent Quality",
+    title: "Configured to Your Requirements",
     description:
-      "High standards in design, build, and finishing for every project, from start to finish.",
+      "Equipment selected and configured around your application, capacity, temperature range, and laboratory workflow.",
     icon: (
       <svg width="100" height="100" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M25 70 Q35 50 50 55 Q55 56 58 60 L62 60 Q65 56 70 55 Q85 50 95 70" />
@@ -56,9 +56,9 @@ const features = [
     ),
   },
   {
-    title: "Committed to Enduring Value",
+    title: "Reliable Technical Support",
     description:
-      "Every decision made today contributes to sustainable success tomorrow.",
+      "From initial enquiry through delivery and beyond — clear communication and responsive support at every stage.",
     icon: (
       <svg width="100" height="100" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M20 95 L50 55 L60 65 L100 25" />
@@ -88,14 +88,14 @@ export function WhyPartner() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <SectionLabel>Why partner with us</SectionLabel>
+          <SectionLabel>Why partner with Sayaro</SectionLabel>
 
           <h3 className="mx-auto text-center font-heading text-[24px] font-medium tracking-tight leading-tight lg:text-[36px]">
             <span className="text-black">
-              We blend design, construction, and
+              We combine precision equipment, technical expertise,
             </span>{" "}
             <span className="text-neutral-400">
-              communication for successful projects.
+              and reliable support for laboratory success.
             </span>
           </h3>
 

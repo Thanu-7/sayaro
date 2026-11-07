@@ -21,27 +21,27 @@ function Stars({ count, color = "text-orange-400" }: { count: number; color?: st
 
 const reviews = [
   {
-    name: "Daniel Wright",
-    role: "Commercial Client",
-    text: "The team maintained clear communication and a structured process from the first discussion to final delivery. The quality of work...",
+    name: "Dr. Ramesh K.",
+    role: "Research Lab Director",
+    text: "Sayaro provided the right autoclave configuration for our microbiology department. The equipment has been running reliably since installation. Good technical support throughout.",
     avatar: "/sites/resido/images/avatar-testimonial.jpg",
     stars: 5,
     starColor: "text-orange-400",
-    brand: "QuartzAI",
+    brand: null,
   },
   {
-    name: "Emily Rodriguez",
-    role: "Residential Client",
-    text: "They approached the project with care and precision, respecting both the timeline and budget. The result was a well executed renovation th...",
+    name: "Priya Nair",
+    role: "QC Head, Pharma",
+    text: "We sourced BOD incubators and hot air ovens from Sayaro for our QC lab. Equipment delivered on time and configured to our temperature and capacity requirements.",
     avatar: "/sites/resido/images/avatar-2.jpg",
-    stars: 3,
+    stars: 5,
     starColor: "text-orange-400",
-    brand: "Pollinate",
+    brand: null,
   },
   {
-    name: "Michael Turner",
-    role: "Developer",
-    text: "Highly happy with our apartment delivered by Sayaro. Definitely will keep working with them. Great quality smooth communication.",
+    name: "Prof. Suresh M.",
+    role: "University Lab Manager",
+    text: "Equipped our entire undergraduate chemistry lab through Sayaro — fume hoods, water baths, and muffle furnaces. Straightforward process and responsive team.",
     avatar: "/sites/resido/images/avatar-testimonial.jpg",
     stars: 4,
     starColor: "text-orange-400",
@@ -98,11 +98,11 @@ export function Testimonials() {
           </div>
 
           <h2 className="font-heading text-[40px] font-medium tracking-[-0.04em] lg:text-[60px] mx-auto text-center">
-            Clients
+            What Our Clients Say
           </h2>
 
           <PillButton href="/contact" className="ml-auto">
-            Become a Client
+            Request a Quote
             <span className="ml-1 text-lg leading-none">&rsaquo;</span>
           </PillButton>
         </motion.div>
@@ -120,13 +120,13 @@ export function Testimonials() {
             <div>
               <Stars count={5} color="text-green-500" />
               <p className="mt-3 text-sm font-medium">
-                200+ Reviews on Trustpilot
+                Trusted by Laboratories
               </p>
               <div className="mt-3 flex items-center gap-2">
                 <AvatarStack size={28} />
               </div>
               <p className="mt-2 text-xs text-neutral-500">
-                Used by 60+ developers &amp; builders
+                Research, pharma &amp; industrial labs
               </p>
             </div>
             <div>
@@ -134,7 +134,7 @@ export function Testimonials() {
                 4.9
               </p>
               <p className="mt-2 text-sm text-neutral-500">
-                Trusted by Property<br />Teams
+                Trusted by Labs<br />Across India
               </p>
             </div>
           </div>

@@ -7,32 +7,39 @@ import { SectionLabel } from "./SectionLabel";
 
 const projects = [
   {
-    title: "Stonehaven Collective",
-    year: "2025",
-    location: "Boulder, Colorado",
+    title: "Vertical Autoclave",
+    year: "Sterilization",
+    location: "Laboratory & Healthcare",
     image: "/sites/resido/images/project-stonehaven.png",
-    href: "/works/stonehaven-collective",
+    href: "/works/vertical-autoclave",
   },
   {
-    title: "Rivermark Pavilion",
-    year: "2025",
-    location: "Portland, Oregon",
+    title: "BOD Incubator",
+    year: "Life Science",
+    location: "Environmental & Water Testing",
     image: "/sites/resido/images/project-rivermark.png",
-    href: "/works/rivermark-pavilion",
+    href: "/works/bod-incubator",
   },
   {
-    title: "Atlas Office Park",
-    year: "2023",
-    location: "Portland, Oregon",
+    title: "Muffle Furnace — 1200°C",
+    year: "Thermal Processing",
+    location: "Material Testing & Research",
     image: "/sites/resido/images/project-atlas.png",
-    href: "/works/atlas-office-park",
+    href: "/works/muffle-furnace-1200c",
   },
   {
-    title: "Willow Creek Home",
-    year: "2023",
-    location: "Portland, Oregon",
+    title: "Laminar Flow Cabinet",
+    year: "Safety & Airflow",
+    location: "Contamination-Free Work",
     image: "/sites/resido/images/project-willow.png",
-    href: "/works/willow-creek-home",
+    href: "/works/laminar-flow-cabinet",
+  },
+  {
+    title: "Constant Temperature Water Bath",
+    year: "Thermal Baths",
+    location: "Sample Incubation & Heating",
+    image: "/sites/resido/images/project-stonehaven.png",
+    href: "/works/constant-temperature-water-bath",
   },
 ];
 
@@ -60,7 +67,7 @@ export function ProjectsCarousel() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <SectionLabel>Our works</SectionLabel>
+          <SectionLabel>Our Products</SectionLabel>
 
           <div className="flex gap-2 ml-4">
             <button
@@ -84,11 +91,11 @@ export function ProjectsCarousel() {
           </div>
 
           <h2 className="font-heading text-[40px] font-medium tracking-[-0.04em] lg:text-[60px] mx-auto text-center">
-            Selected Projects
+            Featured Products
           </h2>
 
           <p className="ml-auto max-w-[280px] text-sm text-neutral-500 text-right hidden lg:block">
-            A look at some of the spaces we&apos;ve designed, built, and renovated.
+            Explore laboratory equipment across our five core product families.
           </p>
         </motion.div>
 

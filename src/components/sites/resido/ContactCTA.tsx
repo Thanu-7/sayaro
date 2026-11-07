@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { PillButton } from "@/components/sites/resido/PillButton";
 
 const offices = [
-  { phone: "+43123600", tel: "+4312360", country: "Austria", address: "Wagramer Straße 94,\n1220 Vienna, Austria" },
-  { phone: "+3222293311", tel: "+3222293311", country: "Belgium", address: "Rue Royale 151,\n1210 Brussels, Belgium" },
-  { phone: "+3222293311", tel: "+3222293311", country: "Croatia", address: "Ul. Grada Vukovara 72,\n10000 Zagreb, Croatia" },
-  { phone: "+4533937733", tel: "+4533937733", country: "Denmark", address: "Nyhavn 14,\n1051 Copenhagen, Denmark" },
+  { phone: "+91 9952204307", tel: "+919952204307", country: "Head Office", address: "Bavani Amman Kovil, No:4,\n1st Street, Manimedu, Thandalam,\nChennai-600122" },
+  { phone: "+91 9952204307", tel: "+919952204307", country: "Phone", address: "Mon – Sat\n9:00 AM – 6:00 PM IST" },
+  { phone: "+91 9952204307", tel: "+919952204307", country: "Email", address: "thermalscientific2021\n@gmail.com" },
+  { phone: "+91 9952204307", tel: "+919952204307", country: "Online", address: "indiamart.com/\nthermalscientificinstruments" },
 ];
 
 function PhoneIcon() {
@@ -41,11 +41,11 @@ export function ContactCTA() {
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
             >
               <h3 className="font-heading text-[32px] lg:text-[40px] font-medium tracking-tight">
-                <span className="text-black">Got a Project?</span>{" "}
+                <span className="text-black">Need Laboratory Equipment?</span>{" "}
                 <span className="text-neutral-400">Let&apos;s Talk</span>
               </h3>
               <p className="text-neutral-500 mt-3">
-                We&apos;ll get back to you ASAP.
+                Share your requirements and we&apos;ll follow up.
               </p>
             </motion.div>
 
@@ -93,21 +93,21 @@ export function ContactCTA() {
               <div>
                 <span className="text-sm text-neutral-400 block mb-1">Email</span>
                 <a
-                  href="mailto:hello@sayaro.inc"
+                  href="mailto:thermalscientific2021@gmail.com"
                   className="inline-flex items-center gap-2 font-heading text-sm hover:opacity-70 transition-opacity"
                 >
                   <MailIcon />
-                  hello@sayaro.inc
+                  thermalscientific2021@gmail.com
                 </a>
               </div>
               <div>
-                <span className="text-sm text-neutral-400 block mb-1">Career</span>
+                <span className="text-sm text-neutral-400 block mb-1">Support</span>
                 <a
-                  href="mailto:career@sayaro.inc"
+                  href="mailto:thermalscientific2021@gmail.com"
                   className="inline-flex items-center gap-2 font-heading text-sm hover:opacity-70 transition-opacity"
                 >
                   <MailIcon />
-                  career@sayaro.inc
+                  thermalscientific2021@gmail.com
                 </a>
               </div>
             </div>

@@ -50,9 +50,9 @@ function AnimatedCounter({
 }
 
 const counters = [
-  { index: "/01", target: 50, suffix: "+", desc: "Successful\nprojects completed" },
-  { index: "/02", target: 98, suffix: "%", desc: "Client satisfaction\nin post-project reviews." },
-  { index: "/04", target: 2016, suffix: "", desc: "Founded, 9 years\nof experience." },
+  { index: "/01", target: 5, suffix: "", desc: "Core product\nfamilies" },
+  { index: "/02", target: 40, suffix: "+", desc: "Equipment models\nacross all families" },
+  { index: "/03", target: 5, suffix: "", desc: "Service stages from\ndesign to support" },
 ] as const;
 
 const staggerContainer = {
@@ -79,7 +79,7 @@ export function AboutBlock() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <SectionLabel>Built on experience and craft</SectionLabel>
+          <SectionLabel>Built on precision and reliability</SectionLabel>
         </motion.div>
 
         <div className="mt-10 flex flex-col lg:flex-row gap-10 lg:gap-16">
@@ -92,8 +92,8 @@ export function AboutBlock() {
           >
             <div className="flex items-center gap-6">
               <blockquote className="font-heading text-[18px] lg:text-[22px] font-medium tracking-tight leading-snug">
-                &ldquo;A smooth process from start to finish. Highly
-                professional team!&rdquo;
+                &ldquo;Precision equipment configured around your
+                laboratory&apos;s requirements.&rdquo;
               </blockquote>
               <div className="h-16 w-px bg-neutral-300 shrink-0" />
               <div className="flex items-center gap-3 shrink-0">
@@ -105,8 +105,8 @@ export function AboutBlock() {
                   className="rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-heading text-sm font-medium">Alisson Backer</p>
-                  <p className="text-xs text-neutral-500">Builder, Railspeed</p>
+                  <p className="font-heading text-sm font-medium">M. Aravindh</p>
+                  <p className="text-xs text-neutral-500">Director, Sayaro</p>
                 </div>
               </div>
             </div>
@@ -121,10 +121,10 @@ export function AboutBlock() {
           >
             <h3 className="font-heading text-[28px] lg:text-[42px] font-medium tracking-tight leading-[1.15]">
               <span className="text-black">
-                We deliver architecture and renovation projects focused on quality.
+                We supply laboratory and scientific equipment focused on quality and reliability.
               </span>{" "}
               <span className="text-neutral-400">
-                Our work blends design with expertise.
+                Our work spans sterilization, incubation, thermal processing, safety, and thermal baths.
               </span>
             </h3>
 
@@ -145,8 +145,8 @@ export function AboutBlock() {
                 </div>
               </div>
               <p className="text-neutral-500 text-[15px] leading-relaxed">
-                We collaborate with clients to ensure every project meets their
-                goals, budget, and timeline.
+                We work with laboratories to understand their requirements and
+                recommend the right equipment for their applications.
               </p>
             </div>
           </motion.div>

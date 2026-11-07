@@ -85,7 +85,7 @@ export default async function WorkDetailPage({
 
       <main>
         {/* Hero */}
-        <section className="bg-[#f7f7f7] pb-16 pt-32">
+        <section className="bg-[#f7f7f7] pb-8 pt-32">
           <div className="mx-auto max-w-[1400px] px-6">
             <Link
               href="/works"
@@ -112,41 +112,45 @@ export default async function WorkDetailPage({
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="pt-8 pb-20">
           <div className="mx-auto max-w-[1400px] px-6">
-            {/* Product image */}
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-                sizes="100vw"
-              />
-            </div>
+            {/* Image + Overview side by side */}
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {/* Left — Product image */}
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
 
-            {/* Quick facts strip */}
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-              {quickFacts.map((fact) => (
-                <div key={fact.label} className="rounded-2xl bg-white p-6">
-                  <p className="font-mono text-xs uppercase tracking-wider text-neutral-400">
-                    {fact.label}
-                  </p>
-                  <p className="mt-2 font-heading text-lg font-medium tracking-tight">
-                    {fact.value}
+              {/* Right — Overview + Quick facts */}
+              <div className="flex flex-col gap-6">
+                <div className="rounded-2xl bg-white p-8">
+                  <h2 className="font-heading text-2xl font-medium tracking-tight">
+                    Overview
+                  </h2>
+                  <p className="mt-4 text-base leading-relaxed text-neutral-600">
+                    {project.overview}
                   </p>
                 </div>
-              ))}
-            </div>
 
-            {/* Overview */}
-            <div className="mt-12 rounded-2xl bg-white p-8 lg:p-10">
-              <h2 className="font-heading text-2xl font-medium tracking-tight">
-                Overview
-              </h2>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-neutral-600">
-                {project.overview}
-              </p>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                  {quickFacts.map((fact) => (
+                    <div key={fact.label} className="rounded-2xl bg-white p-5">
+                      <p className="font-mono text-xs uppercase tracking-wider text-neutral-400">
+                        {fact.label}
+                      </p>
+                      <p className="mt-2 font-heading text-base font-medium tracking-tight">
+                        {fact.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Specs + Applications — two-column */}

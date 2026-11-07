@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { AvatarStack } from "@/components/sites/resido/AvatarStack";
 
 const brands = [
-  "Structura",
-  "Pinewood",
-  "Whitfield",
-  "Apex Group",
-  "Landmark",
+  "Sterilization",
+  "Incubation",
+  "Thermal Processing",
+  "Laboratory Safety",
+  "Thermal Baths",
 ];
 
 export function TrustMarquee() {
@@ -24,11 +24,11 @@ export function TrustMarquee() {
         >
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="font-sans text-sm text-neutral-500">
-              Trusted by property teams
+              Trusted by laboratories across India
             </span>
             <AvatarStack size={28} />
             <span className="font-sans text-sm text-neutral-500">
-              Used by 60+ developers &amp; builders
+              Serving research, pharma &amp; industrial labs
             </span>
           </div>
         </motion.div>
