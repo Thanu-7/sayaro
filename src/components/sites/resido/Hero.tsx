@@ -36,7 +36,7 @@ export function Hero() {
         >
           <Image
             src="/sites/resido/images/hero.jpg"
-            alt="Modern architectural building showcasing precision design"
+            alt="Sayaro laboratory and scientific equipment"
             fill
             className="object-cover"
             sizes="100vw"
@@ -59,30 +59,32 @@ export function Hero() {
               variants={fadeUp}
               className="font-heading text-[36px] font-medium leading-[1.12] tracking-[-0.04em] text-white lg:text-[64px]"
             >
-              Built with Precision.
+              Precision Equipment for
               <br />
-              Designed with Purpose.
+              Laboratory Applications.
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
               className="mt-5 max-w-[540px] text-base leading-relaxed text-white/80 lg:text-lg"
             >
-              Architecture, construction, and renovation services built for
-              precision, purpose, and lasting quality.
+              Explore scientific and laboratory equipment from Sayaro —
+              sterilization, incubation, thermal processing, airflow systems,
+              and temperature-controlled baths for research, pharma, and
+              industrial laboratories.
             </motion.p>
 
             <motion.div
               variants={fadeUp}
               className="mt-8 flex flex-wrap items-center gap-3"
             >
-              <PillButton href="/contact" variant="secondary">
-                Start Your Project
+              <PillButton href="/works" variant="secondary">
+                Explore Our Products
                 <span className="ml-1 text-lg leading-none">&rsaquo;</span>
               </PillButton>
 
-              <PillButton href="/works" variant="tertiary">
-                View Our Work
+              <PillButton href="/contact" variant="tertiary">
+                Request a Quote
               </PillButton>
             </motion.div>
           </motion.div>

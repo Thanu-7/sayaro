@@ -4,32 +4,16 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Works", href: "/works" },
-  { label: "Services", href: "/#services" },
+  { label: "Products", href: "/works" },
+  { label: "Why Sayaro", href: "/#why-sayaro" },
   { label: "Contact", href: "/contact" },
 ];
 
 const socialLinks = [
   {
-    letters: ["I", "G"],
-    separator: "/",
-    href: "https://www.instagram.com/",
-  },
-  {
-    letters: ["D", "R"],
-    separator: "/",
-    href: "https://www.dribbble.com/",
-  },
-  {
-    letters: ["B", "E"],
-    separator: "/",
-    href: "https://www.behance.net/",
-  },
-  {
-    letters: ["X"],
+    letters: ["I", "M"],
     separator: "",
-    href: "https://www.x.com/",
+    href: "https://www.indiamart.com/thermalscientificinstruments",
   },
 ];
 
@@ -142,17 +126,7 @@ export function Footer() {
         }}
       >
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-400">
-          <span>
-            Built in{" "}
-            <a
-              href="https://www.framer.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold hover:text-black transition-colors"
-            >
-              Framer
-            </a>
-          </span>
+          <span>Chennai, India</span>
           <span>&copy;2026 Sayaro.Inc.&trade; All rights reserved.</span>
           <div className="flex gap-4">
             <Link

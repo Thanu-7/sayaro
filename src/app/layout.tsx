@@ -39,9 +39,9 @@ const fragmentMono = Fragment_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sayaro - Architecture, Construction & Renovation",
+  title: "Sayaro | Laboratory & Scientific Equipment",
   description:
-    "Architecture, construction, and renovation services built for precision, purpose, and lasting quality.",
+    "Explore laboratory and scientific equipment from Sayaro — autoclaves, incubators, furnaces, fume hoods, laminar flow systems, and water baths for research, pharmaceutical, industrial, and educational laboratories.",
 };
 
 export default function RootLayout({

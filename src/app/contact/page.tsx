@@ -10,28 +10,28 @@ import { FAQ } from "@/components/sites/resido/FAQ";
 
 const offices = [
   {
-    phone: "+43123600",
-    tel: "+43123600",
-    country: "Austria",
-    address: "Wagramer Straße 94, 1220 Vienna",
+    phone: "+91 9952204307",
+    tel: "+919952204307",
+    country: "Head Office",
+    address: "Bavani Amman Kovil, No:4, 1st Street, Manimedu, Thandalam, Chennai-600122",
   },
   {
-    phone: "+3222293311",
-    tel: "+3222293311",
-    country: "Belgium",
-    address: "Rue Royale 151, 1210 Brussels",
+    phone: "+91 9952204307",
+    tel: "+919952204307",
+    country: "Phone",
+    address: "Mon – Sat, 9:00 AM – 6:00 PM IST",
   },
   {
-    phone: "+3222293311",
-    tel: "+3222293311",
-    country: "Croatia",
-    address: "Ul. Grada Vukovara 72, 10000 Zagreb",
+    phone: "",
+    tel: "",
+    country: "Email",
+    address: "thermalscientific2021@gmail.com",
   },
   {
-    phone: "+4533937733",
-    tel: "+4533937733",
-    country: "Denmark",
-    address: "Nyhavn 14, 1051 Copenhagen",
+    phone: "",
+    tel: "",
+    country: "Online",
+    address: "indiamart.com/thermalscientificinstruments",
   },
 ];
 
@@ -59,10 +59,10 @@ export default function ContactPage() {
                   Email
                 </span>
                 <a
-                  href="mailto:hello@sayaro.inc"
+                  href="mailto:thermalscientific2021@gmail.com"
                   className="font-heading text-lg font-medium transition-opacity hover:opacity-70"
                 >
-                  hello@sayaro.inc
+                  thermalscientific2021@gmail.com
                 </a>
               </div>
               <div>
@@ -70,10 +70,10 @@ export default function ContactPage() {
                   Phone
                 </span>
                 <a
-                  href="tel:+43123600"
+                  href="tel:+919952204307"
                   className="font-heading text-lg font-medium transition-opacity hover:opacity-70"
                 >
-                  +43123600
+                  +91 9952204307
                 </a>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
           {/* CTA heading */}
           <section className="py-12">
             <h2 className="max-w-2xl font-heading text-[28px] font-medium tracking-tight lg:text-[36px]">
-              Have a project idea? Reach out, and we&apos;ll find the best path.
+              Have a laboratory equipment requirement? Reach out, and we&apos;ll find the right solution.
             </h2>
           </section>
 
@@ -129,7 +129,7 @@ export default function ContactPage() {
                   <input
                     id="name"
                     type="text"
-                    placeholder="Jane Cooper"
+                    placeholder="Your full name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm outline-none transition-colors focus:border-neutral-400"
@@ -146,7 +146,7 @@ export default function ContactPage() {
                   <input
                     id="email"
                     type="email"
-                    placeholder="hello@site.com"
+                    placeholder="you@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm outline-none transition-colors focus:border-neutral-400"
@@ -158,11 +158,11 @@ export default function ContactPage() {
                     htmlFor="details"
                     className="mb-2 block font-mono text-xs uppercase tracking-wider text-neutral-400"
                   >
-                    Project Details
+                    Equipment Requirement
                   </label>
                   <textarea
                     id="details"
-                    placeholder="Tell us more about your idea.."
+                    placeholder="Tell us the product, application, capacity, temperature range, and quantity you need..."
                     value={details}
                     onChange={(e) => setDetails(e.target.value)}
                     rows={5}
@@ -201,7 +201,7 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full"
                 >
-                  Send Message
+                  Send Enquiry
                 </PillButton>
               </form>
             </div>

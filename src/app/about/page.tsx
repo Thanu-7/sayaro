@@ -64,18 +64,18 @@ function AnimatedCounter({
 /* ------------------------------------------------------------------ */
 
 const stats = [
-  { index: "/01", target: 5000, suffix: "+", label: "Square ft. designed" },
-  { index: "/02", target: 120, suffix: "", label: "Planning approvals" },
-  { index: "/03", target: 45, suffix: "", label: "Skilled tradespeople" },
-  { index: "/04", target: 30, suffix: "+", label: "Trusted partners" },
+  { index: "/01", target: 5, suffix: "", label: "Core product families" },
+  { index: "/02", target: 40, suffix: "+", label: "Equipment models" },
+  { index: "/03", target: 5, suffix: "", label: "Service stages" },
+  { index: "/04", target: 12, suffix: "", label: "Pages in product brochure" },
 ] as const;
 
 const teamMembers = [
-  { name: "Elowen Vance", role: "Project Manager" },
-  { name: "Ronan Frost", role: "Lead Architect" },
-  { name: "Eamon Blackwood", role: "Construction Manager" },
-  { name: "Saoirse Wynn", role: "Interior Designer" },
-  { name: "Kelly Blake", role: "Sustainability Expert" },
+  { name: "M. Aravindh", role: "Director" },
+  { name: "Engineering Team", role: "Product Design" },
+  { name: "Manufacturing Team", role: "Fabrication" },
+  { name: "Quality Team", role: "Quality Assurance" },
+  { name: "Service Team", role: "Installation & Support" },
 ] as const;
 
 // Each member repeated 4 times = 20 cards
@@ -83,59 +83,59 @@ const teamGrid = Array.from({ length: 4 }, () => teamMembers).flat();
 
 const awards = [
   {
-    title: "Excellence in Residential Design",
-    body: "National Architecture & Build Awards",
+    title: "Precision Engineering",
+    body: "High-quality engineering for reliability and performance",
   },
   {
-    title: "Best Renovation Residential Design",
-    body: "Urban Design & Construction Awards",
+    title: "Custom Manufacturing",
+    body: "Equipment tailored to industry-specific requirements",
   },
   {
-    title: "Outstanding Construction Quality",
-    body: "Regional Builders Association Awards",
+    title: "Quality Assurance",
+    body: "Strict quality control across every instrument",
   },
   {
-    title: "Sustainable Building Recognition",
-    body: "Green Design Council Awards 2025",
+    title: "End-to-End Solutions",
+    body: "Design, fabrication, installation, and support",
   },
 ] as const;
 
 const comparisonRows = [
   {
-    label: "Experience",
-    sayaro: "Proven track record across residential, commercial, and renovation.",
-    contractors: "Varies by contractor.",
-    freelancers: "Limited to individual expertise.",
+    label: "Product Range",
+    sayaro: "Focused range across 5 core laboratory product families.",
+    contractors: "Broad catalogue, limited depth.",
+    freelancers: "Single-category specialists.",
   },
   {
-    label: "Management",
-    sayaro: "Full project management included.",
-    contractors: "Often requires separate oversight.",
-    freelancers: "Self-managed.",
+    label: "Customization",
+    sayaro: "Equipment configured to your capacity, temperature, and application.",
+    contractors: "Limited to standard models.",
+    freelancers: "Minimal customization.",
   },
   {
-    label: "Quality",
-    sayaro: "Consistent standards across all phases.",
-    contractors: "Depends on subcontractors.",
-    freelancers: "Inconsistent.",
+    label: "Technical Support",
+    sayaro: "Dedicated technical guidance from enquiry to installation.",
+    contractors: "Sales-focused support.",
+    freelancers: "Limited availability.",
   },
   {
-    label: "Communication",
-    sayaro: "Dedicated point of contact.",
-    contractors: "Multiple contacts.",
-    freelancers: "Direct but limited availability.",
+    label: "Quality Control",
+    sayaro: "Consistent standards across all equipment.",
+    contractors: "Depends on source manufacturer.",
+    freelancers: "No formal QC process.",
   },
   {
-    label: "Cost",
-    sayaro: "Transparent, fixed-price proposals.",
-    contractors: "Variable, often with extras.",
-    freelancers: "Lower upfront, hidden costs possible.",
+    label: "After-Sales",
+    sayaro: "Installation, commissioning, and ongoing support.",
+    contractors: "Warranty claims only.",
+    freelancers: "None or limited.",
   },
   {
-    label: "Ideal for",
-    sayaro: "End-to-end projects.",
-    contractors: "Specialized trades.",
-    freelancers: "Small, defined tasks.",
+    label: "Ideal For",
+    sayaro: "Complete laboratory equipment requirements.",
+    contractors: "Bulk standard purchases.",
+    freelancers: "One-off small items.",
   },
 ] as const;
 
@@ -188,7 +188,7 @@ export default function AboutPage() {
         {/* ============================================ */}
         <PageHero
           label="About"
-          title="Inspiring with design. Empowering through technology"
+          title="Precision equipment. Engineered for your laboratory."
         />
 
         {/* ============================================ */}
@@ -198,9 +198,10 @@ export default function AboutPage() {
           <div className="mx-auto max-w-[1400px] px-6">
             <ScrollReveal>
               <p className="max-w-3xl font-heading text-[24px] font-medium leading-relaxed tracking-tight text-neutral-700 lg:text-[32px]">
-                We are a design and construction studio delivering projects
-                focused on quality and value. Our work combines architecture,
-                renovation, and construction under one team.
+                Sayaro is a laboratory equipment manufacturer and supplier
+                delivering scientific infrastructure solutions for research,
+                pharmaceutical, industrial, and educational laboratories across
+                India.
               </p>
             </ScrollReveal>
           </div>
@@ -231,30 +232,30 @@ export default function AboutPage() {
         </section>
 
         {/* ============================================ */}
-        {/* 4. Testimonial                               */}
+        {/* 4. Vision & Mission                          */}
         {/* ============================================ */}
         <section className="py-16">
           <div className="mx-auto max-w-[1400px] px-6">
             <ScrollReveal>
               <div className="rounded-2xl bg-white p-8 lg:p-12">
                 <blockquote className="max-w-2xl font-heading text-2xl italic leading-relaxed tracking-tight lg:text-3xl">
-                  &ldquo;I&apos;m extremely pleased with the apartment designed
-                  by Sayaro. The quality and communication were excellent
-                  throughout.&rdquo;
+                  &ldquo;To provide safe, efficient, and modern laboratory
+                  environments that support scientific research and industrial
+                  development.&rdquo;
                 </blockquote>
                 <div className="mt-8 flex items-center gap-3">
                   <Image
                     src="/sites/resido/images/avatar-testimonial.jpg"
-                    alt="Michael Turner"
+                    alt="M. Aravindh"
                     width={48}
                     height={48}
                     className="rounded-full object-cover"
                   />
                   <div>
                     <p className="font-heading text-sm font-medium">
-                      Michael Turner
+                      M. Aravindh
                     </p>
-                    <p className="text-sm text-neutral-500">Developer</p>
+                    <p className="text-sm text-neutral-500">Director, Sayaro</p>
                   </div>
                 </div>
               </div>
@@ -293,14 +294,14 @@ export default function AboutPage() {
         </section>
 
         {/* ============================================ */}
-        {/* 6. Awards                                    */}
+        {/* 6. Capabilities                              */}
         {/* ============================================ */}
         <section className="py-20">
           <div className="mx-auto max-w-[1400px] px-6">
             <ScrollReveal>
-              <SectionLabel>Recognition</SectionLabel>
+              <SectionLabel>Capabilities</SectionLabel>
               <h3 className="mt-4 font-heading text-[28px] font-medium tracking-tight lg:text-[36px]">
-                Some of the honors we&apos;ve achieved
+                What sets Sayaro apart
               </h3>
             </ScrollReveal>
 
@@ -328,9 +329,9 @@ export default function AboutPage() {
         <section className="py-20">
           <div className="mx-auto max-w-[1400px] px-6">
             <ScrollReveal>
-              <SectionLabel>Why Us</SectionLabel>
+              <SectionLabel>Why Sayaro</SectionLabel>
               <h3 className="mt-4 font-heading text-[28px] font-medium tracking-tight lg:text-[36px]">
-                Choosing the right partner
+                Choosing the right equipment partner
               </h3>
             </ScrollReveal>
 
@@ -348,10 +349,10 @@ export default function AboutPage() {
                           Sayaro.Inc
                         </th>
                         <th className="px-6 py-4 font-heading text-sm font-medium text-neutral-500">
-                          Contractors
+                          Generic Suppliers
                         </th>
                         <th className="px-6 py-4 font-heading text-sm font-medium text-neutral-500">
-                          Freelancers
+                          Online Marketplaces
                         </th>
                       </tr>
                     </thead>
@@ -405,7 +406,7 @@ export default function AboutPage() {
                         </div>
                         <div className="rounded-lg p-3">
                           <span className="text-xs font-medium text-neutral-400">
-                            Contractors
+                            Generic Suppliers
                           </span>
                           <p className="text-sm text-neutral-500">
                             {row.contractors}
@@ -413,7 +414,7 @@ export default function AboutPage() {
                         </div>
                         <div className="rounded-lg p-3">
                           <span className="text-xs font-medium text-neutral-400">
-                            Freelancers
+                            Online Marketplaces
                           </span>
                           <p className="text-sm text-neutral-500">
                             {row.freelancers}
@@ -427,7 +428,7 @@ export default function AboutPage() {
 
               <div className="mt-8 text-center">
                 <PillButton href="/contact" variant="primary">
-                  Become a Client
+                  Request a Quote
                 </PillButton>
               </div>
             </ScrollReveal>

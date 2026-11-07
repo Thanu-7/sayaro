@@ -20,16 +20,16 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             We collect information you provide directly, such as your name,
-            email address, phone number, and project details when you contact us
-            through our website forms.
+            email address, phone number, and equipment requirement details when
+            you contact us through our website forms.
           </p>
 
           <h2 className="font-heading text-xl font-medium tracking-tight mt-10 mb-4">
             How We Use Your Information
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
-            We use your information to respond to inquiries, provide project
-            estimates, communicate about ongoing projects, and improve our
+            We use your information to respond to enquiries, provide equipment
+            quotations, communicate about orders and deliveries, and improve our
             services. We do not sell your personal information to third parties.
           </p>
 
@@ -55,8 +55,8 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             You have the right to access, correct, or delete your personal
-            information. Contact us at hello@sayaro.inc to exercise these
-            rights.
+            information. Contact us at thermalscientific2021@gmail.com to
+            exercise these rights.
           </p>
 
           <h2 className="font-heading text-xl font-medium tracking-tight mt-10 mb-4">
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             If you have questions about this privacy policy, please contact us
-            at hello@sayaro.inc or visit our contact page.
+            at thermalscientific2021@gmail.com or visit our contact page.
           </p>
         </article>
       </main>

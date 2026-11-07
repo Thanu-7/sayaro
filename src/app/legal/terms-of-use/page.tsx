@@ -28,8 +28,8 @@ export default function TermsOfUsePage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             This website is provided for informational purposes about our
-            architecture, construction, and renovation services. You may not use
-            this website for any unlawful purpose.
+            laboratory and scientific equipment products and services. You may
+            not use this website for any unlawful purpose.
           </p>
 
           <h2 className="font-heading text-xl font-medium tracking-tight mt-10 mb-4">
@@ -47,8 +47,8 @@ export default function TermsOfUsePage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             Information submitted through our contact forms is used solely for
-            the purpose of responding to your inquiry and providing
-            project-related services.
+            the purpose of responding to your enquiry and providing
+            equipment-related quotations and services.
           </p>
 
           <h2 className="font-heading text-xl font-medium tracking-tight mt-10 mb-4">
@@ -56,8 +56,8 @@ export default function TermsOfUsePage() {
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
             Sayaro Inc. is not liable for any damages arising from your use of
-            this website. All project work is governed by separate contractual
-            agreements.
+            this website. All equipment orders and services are governed by
+            separate contractual agreements.
           </p>
 
           <h2 className="font-heading text-xl font-medium tracking-tight mt-10 mb-4">
@@ -72,7 +72,8 @@ export default function TermsOfUsePage() {
             Contact
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
-            For questions about these terms, contact us at hello@sayaro.inc.
+            For questions about these terms, contact us at
+            thermalscientific2021@gmail.com.
           </p>
         </article>
       </main>

@@ -11,13 +11,13 @@ import { LetsBuildTogether } from "@/components/sites/resido/LetsBuildTogether";
 import { projects } from "@/components/sites/resido/data";
 import type { Project } from "@/components/sites/resido/data";
 
-const filters = ["All Works", "Residential", "Commercial", "Renovation"] as const;
+const filters = ["All Products", "Sterilization", "Life Science", "Thermal & Industrial", "Safety & Airflow", "Thermal Baths"] as const;
 
 export default function WorksPage() {
-  const [activeFilter, setActiveFilter] = useState<string>("All Works");
+  const [activeFilter, setActiveFilter] = useState<string>("All Products");
 
   const filteredProjects: Project[] =
-    activeFilter === "All Works"
+    activeFilter === "All Products"
       ? projects
       : projects.filter((p) => p.category === activeFilter);
 
@@ -29,21 +29,21 @@ export default function WorksPage() {
         {/* Header section */}
         <section className="pt-32 pb-16">
           <div className="mx-auto max-w-[1400px] px-6">
-            <SectionLabel>Our Work</SectionLabel>
+            <SectionLabel>Our Products</SectionLabel>
 
             <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <h1 className="font-heading text-[40px] font-medium tracking-[-0.04em] lg:text-[60px]">
-                  Work
+                  Products
                 </h1>
                 <p className="mt-4 text-lg text-neutral-500">
-                  We&apos;ve partnered with businesses to help them reach goals.
-                  Check out latest projects.
+                  Explore our range of laboratory and scientific equipment across
+                  sterilization, life science, and thermal processing.
                 </p>
               </div>
 
               <PillButton variant="primary" href="/contact">
-                Let&apos;s Talk
+                Request a Quote
               </PillButton>
             </div>
           </div>

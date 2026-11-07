@@ -48,7 +48,7 @@ export function LetsBuildTogether() {
           <div className="relative rounded-2xl overflow-hidden min-h-[400px] lg:min-h-[500px]">
             <Image
               src="/sites/resido/images/footer-cta.png"
-              alt="Let's Build It Together"
+              alt="Sayaro laboratory equipment"
               fill
               className="object-cover"
             />
@@ -66,20 +66,20 @@ export function LetsBuildTogether() {
           >
             <div className="rounded-2xl bg-white p-8">
               <h2 className="font-heading text-[36px] lg:text-[48px] font-medium tracking-tight leading-tight">
-                Let&apos;s Build It Together.
+                Let&apos;s Find the Right Equipment.
               </h2>
 
               <div className="mt-6 space-y-3">
                 <div className="flex gap-2">
                   <CheckIcon />
                   <span className="text-sm">
-                    NDA available for sensitive projects.
+                    Share your equipment, application, and technical requirements.
                   </span>
                 </div>
                 <div className="flex gap-2">
                   <CheckIcon />
                   <span className="text-sm">
-                    Clear response within 24 hours.
+                    Our team will review and respond within 24 hours.
                   </span>
                 </div>
               </div>
@@ -99,11 +99,11 @@ export function LetsBuildTogether() {
           >
             <div className="rounded-2xl bg-white p-8">
               <h3 className="font-heading text-xl font-medium tracking-tight">
-                Have a project in mind? Let&apos;s get started
+                Have an equipment requirement? Let&apos;s get started
               </h3>
               <p className="text-sm text-neutral-500 mt-2 mb-6">
-                We&apos;ll schedule a call to discuss your idea. Following these
-                sessions, we&apos;ll send a proposal and get started.
+                Share the product, application, and technical details you need.
+                We&apos;ll review your requirement and get back to you.
               </p>
 
               <form
@@ -116,7 +116,7 @@ export function LetsBuildTogether() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Jane Cooper"
+                    placeholder="Your full name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className={inputClasses}
@@ -129,7 +129,7 @@ export function LetsBuildTogether() {
                   </label>
                   <input
                     type="email"
-                    placeholder="hello@site.com"
+                    placeholder="you@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className={inputClasses}
@@ -138,10 +138,10 @@ export function LetsBuildTogether() {
 
                 <div>
                   <label className="text-sm font-medium mb-1.5 block">
-                    Project Details
+                    Equipment Requirement
                   </label>
                   <textarea
-                    placeholder="Tell us more about your idea.."
+                    placeholder="Tell us the product, application, capacity, temperature range, and quantity you need..."
                     value={details}
                     onChange={(e) => setDetails(e.target.value)}
                     rows={4}
@@ -150,7 +150,7 @@ export function LetsBuildTogether() {
                 </div>
 
                 <PillButton type="submit" variant="primary" className="w-full">
-                  Send Message
+                  Send Enquiry
                 </PillButton>
               </form>
             </div>

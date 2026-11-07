@@ -6,25 +6,20 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Works", href: "/works" },
-  { label: "Services", href: "/#services" },
+  { label: "Products", href: "/works" },
+  { label: "Why Sayaro", href: "/#why-sayaro" },
   { label: "Contact", href: "/contact" },
 ];
 
 const panelLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Works", href: "/works" },
-  { label: "Services", href: "/#services" },
+  { label: "Products", href: "/works" },
+  { label: "Why Sayaro", href: "/#why-sayaro" },
   { label: "Contact", href: "/contact" },
 ];
 
 const socialLinks = [
-  { letters: "IG", separator: "/", href: "https://www.instagram.com/" },
-  { letters: "DR", separator: "/", href: "https://www.dribbble.com/" },
-  { letters: "BE", separator: "/", href: "https://www.behance.net/" },
-  { letters: "X", separator: "", href: "https://www.x.com/" },
+  { letters: "IM", separator: "", href: "https://www.indiamart.com/thermalscientificinstruments" },
 ];
 
 const navStaggerContainer = {
@@ -146,12 +141,12 @@ export function Navbar() {
               {/* Newsletter row */}
               <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <p className="text-sm text-neutral-500">
-                  Sign Up to Our Monthly Newsletter
+                  Stay Updated on Our Latest Equipment
                 </p>
                 <div className="flex gap-2">
                   <input
                     type="email"
-                    placeholder="youname@site.com"
+                    placeholder="you@company.com"
                     className="rounded-full border border-neutral-200 px-5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-black/10 w-[220px]"
                   />
                   <button className="rounded-full bg-black px-5 py-2.5 text-sm font-heading font-medium text-white hover:opacity-80 transition-opacity">
@@ -163,10 +158,10 @@ export function Navbar() {
               {/* Contact + socials row */}
               <div className="mt-6 flex flex-wrap items-center gap-6 text-sm">
                 <a
-                  href="mailto:hello@sayaro.inc"
+                  href="mailto:thermalscientific2021@gmail.com"
                   className="font-heading hover:opacity-60 transition-opacity"
                 >
-                  hello@sayaro.inc
+                  thermalscientific2021@gmail.com
                 </a>
                 <div className="flex items-center gap-4">
                   {socialLinks.map((social) => (

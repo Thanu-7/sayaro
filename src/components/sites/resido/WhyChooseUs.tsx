@@ -20,8 +20,8 @@ const staggerItem = {
 
 const textCards = [
   {
-    title: "Creating Functional Spaces",
-    description: "We create spaces that enhance living, increase comfort, and provide lasting value.",
+    title: "Precision Engineering",
+    description: "Advanced engineering solutions designed for accuracy, durability, and high operational performance across all laboratory applications.",
     icon: (
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <circle cx="55" cy="60" r="42" />
@@ -37,8 +37,8 @@ const textCards = [
     ),
   },
   {
-    title: "End to End Delivery",
-    description: "We manage design, construction, and renovation from planning to final handover.",
+    title: "Custom Manufacturing",
+    description: "Laboratory equipment tailored to your industry-specific requirements — capacity, dimensions, temperature range, and configuration.",
     icon: (
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <rect x="15" y="25" width="42" height="42" rx="6" fill="currentColor" />
@@ -52,8 +52,8 @@ const textCards = [
     ),
   },
   {
-    title: "Clear Communication",
-    description: "Transparent timelines, realistic budgets, and regular updates at every stage.",
+    title: "Quality Assurance",
+    description: "Strict quality control procedures ensuring reliable performance and consistent product standards across every instrument we deliver.",
     icon: (
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="1.8">
         <rect x="22" y="12" width="62" height="82" rx="6" />
@@ -72,7 +72,7 @@ const textCards = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20">
+    <section id="why-sayaro" className="py-20">
       <div className="mx-auto max-w-[1400px] px-6">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -80,13 +80,13 @@ export function WhyChooseUs() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <SectionLabel>Why choose us</SectionLabel>
+          <SectionLabel>Why Sayaro</SectionLabel>
           <h3 className="mt-4 max-w-3xl font-heading text-[24px] font-medium leading-tight tracking-tight lg:text-[40px]">
             <span className="text-black">
-              We combine design, reliable construction,
+              We combine precision engineering, custom manufacturing,
             </span>{" "}
             <span className="text-neutral-400">
-              and clear communication to deliver projects confidently.
+              and strict quality assurance to deliver laboratory equipment you can rely on.
             </span>
           </h3>
         </motion.div>
@@ -134,18 +134,19 @@ export function WhyChooseUs() {
             <div className="relative overflow-hidden rounded-2xl h-[320px] lg:h-[380px]">
               <Image
                 src="/sites/resido/images/bento-quality.png"
-                alt="Quality Craftsmanship"
+                alt="Experienced Team"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h4 className="font-heading text-[22px] font-medium tracking-tight text-white">
-                  Quality Craftsmanship
+                  Experienced Team
                 </h4>
                 <p className="mt-2 text-sm leading-relaxed text-white/80 max-w-sm">
-                  We create spaces that enhance living, increase comfort, and
-                  provide lasting value.
+                  Skilled professionals with deep expertise in laboratory
+                  engineering, manufacturing, and scientific infrastructure
+                  solutions.
                 </p>
               </div>
             </div>
@@ -161,18 +162,18 @@ export function WhyChooseUs() {
             <div className="relative overflow-hidden rounded-2xl h-[320px] lg:h-[380px]">
               <Image
                 src="/sites/resido/images/bento-longterm.png"
-                alt="Long Term Focus"
+                alt="End-to-End Support"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h4 className="font-heading text-[22px] font-medium tracking-tight text-white">
-                  Long Term Focus
+                  End-to-End Support
                 </h4>
                 <p className="mt-2 text-sm leading-relaxed text-white/80 max-w-sm">
-                  Spaces designed and built to perform well, adapt over time,
-                  and retain value.
+                  From design and fabrication to installation and ongoing
+                  support — complete laboratory solutions under one roof.
                 </p>
               </div>
             </div>
